@@ -1,0 +1,31 @@
+<% include partials/head.ejs %>
+<% include partials/header.ejs %>
+<main role="main"> 
+    <section>
+        <% results.forEach(result => { %>            
+        <h1><%= (typeof result.names != 'undefined') ? result.names: ''  %></h1> 
+        <p><%= (typeof result.colors != 'undefined') ? result.colors: ''  %></p> 
+        <p><%= (typeof result.weights != 'undefined') ? result.weights: ''  %></p> 
+        <p><%= (typeof result.taste_aciditys != 'undefined') ? result.taste_aciditys: ''  %></p> 
+        <p><%= (typeof result.taste_strengths != 'undefined') ? result.taste_strengths: ''  %></p> 
+        <p><%= (typeof result.taste_types != 'undefined') ? result.taste_types: ''  %></p>   
+        <p><%= (typeof result.prices  != 'undefined') ? result.prices: ''  %></p>     
+        <p><%= (typeof result.color  != 'undefined') ? result.color: ''  %></p>  
+        <p><%= (typeof result.aciditys  != 'undefined') ? result.aciditys: ''  %></p>  
+        <p><%= (typeof result.strenghts  != 'undefined') ? result.strenghts: ''  %></p>  
+        <p><%= (typeof result.types  != 'undefined') ? result.types: ''  %></p>   
+        <p><%= (typeof result.count  != 'undefined') ? result.count: ''  %></p>   
+        <p><%= (typeof result.snit  != 'undefined') ? result.snit: ''  %></p>  
+        <p><%= (typeof result.lavest  != 'undefined') ? result.lavest: ''  %></p>  
+        <p><%= (typeof result.maksnavn  != 'undefined') ? result.maksnavn: ''  %></p>  
+        <p><%= (typeof result.maks  != 'undefined') ? result.maks: ''  %></p>  
+
+  
+        <% }); %> 
+  
+
+
+    </section>
+</main>
+<% include partials/footer.ejs %>
+<% include partials/after-footer.ejs %>

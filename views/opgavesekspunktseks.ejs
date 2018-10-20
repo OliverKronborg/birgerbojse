@@ -1,0 +1,22 @@
+<% include partials/head.ejs %>
+<% include partials/header.ejs %>
+<main role="main"> 
+    <section>
+        <% resultat.forEach(result => { %>            
+            <p><%= result.firstname  %></p> 
+            <p><%= result.firstnumber  %></p> 
+              
+        <% }); %>
+
+        
+        <% results.forEach(result => { %>            
+            
+    
+            <p><%= result.secondname  %></p> 
+            <p><%=  result.secondnumber %></p>  
+      
+            <% }); %> 
+    </section>
+</main>
+<% include partials/footer.ejs %>
+<% include partials/after-footer.ejs %>

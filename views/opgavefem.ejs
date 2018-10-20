@@ -1,0 +1,13 @@
+<% include partials/head.ejs %>
+<% include partials/header.ejs %>
+<main role="main"> 
+    <section>
+        <% results.forEach(result => { %>            
+            <h1><%= result.names  %></h1> 
+            <p><%= result.prices * 2.50 %></p> 
+            <p><%= result.prices * 2.50 * 1.25%></p>           
+        <% }); %>
+    </section>
+</main>
+<% include partials/footer.ejs %>
+<% include partials/after-footer.ejs %>
